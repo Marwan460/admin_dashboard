@@ -23,6 +23,15 @@ abstract class AppStyles{
     color: AppColors.primary,
   );
 
+
+  static const TextStyle bold16 = TextStyle(
+    fontFamily: "Montserrat",
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blue,
+  );
+
+
   static const TextStyle semiBold20 = TextStyle(
     fontFamily: "Montserrat",
     fontSize: 20,
