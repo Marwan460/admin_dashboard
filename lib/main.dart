@@ -1,4 +1,4 @@
-import 'package:admin_dashboard/core/widgets/dash_board_view.dart';
+import 'package:admin_dashboard/views/dash_board_view.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(const AdminDashBoard());
@@ -12,7 +12,6 @@ class AdminDashBoard extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home:DashBoardView(),
-
     );
   }
 }
