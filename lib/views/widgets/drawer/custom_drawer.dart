@@ -1,11 +1,12 @@
 import 'package:admin_dashboard/core/utils/app_colors.dart';
-import 'package:admin_dashboard/views/widgets/drawer_items_list_view.dart';
-import 'package:admin_dashboard/views/widgets/in_active_drawer_item.dart';
+import 'package:admin_dashboard/views/widgets/drawer/drawer_items_list_view.dart';
+import 'package:admin_dashboard/views/widgets/drawer/in_active_drawer_item.dart';
 import 'package:admin_dashboard/views/widgets/users_info_list_tile.dart';
 import 'package:flutter/material.dart';
 
-import '../../core/utils/app_images.dart';
-import '../../models/drawer_item_model.dart';
+import '../../../core/utils/app_images.dart';
+import '../../../models/drawer_item_model.dart';
+import '../../../models/user_info_model.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -14,22 +15,24 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.white,
-      child: const CustomScrollView(
+      child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: UsersInfoListTile(
-              title: "Lekan Okeowo",
-              subtitle: "demo@gmail.com",
-              image: Assets.avatar1,
+              userInfoModel: UserInfoModel(
+                image: Assets.avatar1,
+                title: "Lekan Okeowo",
+                subTitle: "demo@gmail.com",
+              ),
             ),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: SizedBox(
               height: 8,
             ),
           ),
-          DrawerItemsListView(),
-          SliverFillRemaining(
+          const DrawerItemsListView(),
+          const SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [

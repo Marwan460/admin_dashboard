@@ -1,5 +1,5 @@
-import 'package:admin_dashboard/views/widgets/all_expenses_header.dart';
-import 'package:admin_dashboard/views/widgets/all_expenses_item_list.dart';
+import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses_header.dart';
+import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses_item_list.dart';
 import 'package:admin_dashboard/views/widgets/custom_background_widget.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,6 @@
 import 'package:admin_dashboard/views/widgets/custom_background_widget.dart';
-import 'package:admin_dashboard/views/widgets/quick_invoice_header.dart';
+import 'package:admin_dashboard/views/widgets/quick_invoice/latest_transaction.dart';
+import 'package:admin_dashboard/views/widgets/quick_invoice/quick_invoice_header.dart';
 import 'package:flutter/material.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -9,8 +10,11 @@ class QuickInvoice extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackgroundWidget(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          QuickInvoiceHeader()
+          QuickInvoiceHeader(),
+          SizedBox(height: 24,),
+          LatestTransaction(),
         ],
       ),
     );

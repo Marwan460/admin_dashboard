@@ -1,8 +1,8 @@
-import 'package:admin_dashboard/views/widgets/all_expenses_item.dart';
+import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses_item.dart';
 import 'package:flutter/material.dart';
 
-import '../../core/utils/app_images.dart';
-import '../../models/all_expenses_item_model.dart';
+import '../../../core/utils/app_images.dart';
+import '../../../models/all_expenses_item_model.dart';
 
 class AllExpensesItemList extends StatefulWidget {
   const AllExpensesItemList({super.key});

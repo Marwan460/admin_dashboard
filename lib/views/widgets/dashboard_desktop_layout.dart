@@ -1,6 +1,6 @@
-import 'package:admin_dashboard/views/widgets/all_expenses.dart';
-import 'package:admin_dashboard/views/widgets/custom_drawer.dart';
-import 'package:admin_dashboard/views/widgets/quick_invoice.dart';
+import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses.dart';
+import 'package:admin_dashboard/views/widgets/drawer/custom_drawer.dart';
+import 'package:admin_dashboard/views/widgets/quick_invoice/quick_invoice.dart';
 import 'package:flutter/material.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
