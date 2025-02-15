@@ -22,7 +22,7 @@ class AllExpensesHeader extends StatelessWidget {
             color: AppColors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
-              side: const BorderSide(width: 1, color: Color(0xffF1F1F1)),
+              side: const BorderSide(width: 1, color: AppColors.white3),
             ),
           ),
           child: const Row(
