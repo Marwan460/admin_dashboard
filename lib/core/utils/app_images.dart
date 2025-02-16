@@ -6,6 +6,9 @@ class Assets {
   /// assets/images/avatar_1.svg
   static const String avatar1 = "assets/images/avatar_1.svg";
 
+  static const String gallery = "assets/images/gallery.svg";
+
+
   /// Assets for imagesAvatar2
   /// assets/images/avatar_2.svg
   static const String avatar2 = "assets/images/avatar_2.svg";
@@ -20,7 +23,7 @@ class Assets {
 
   /// Assets for imagesCard
   /// assets/images/card.svg
-  static const String card = "assets/images/card.svg";
+  static const String card = "assets/images/card.png";
 
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg

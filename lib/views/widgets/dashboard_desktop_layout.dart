@@ -1,5 +1,6 @@
 import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses.dart';
 import 'package:admin_dashboard/views/widgets/drawer/custom_drawer.dart';
+import 'package:admin_dashboard/views/widgets/my_card/my_card.dart';
 import 'package:admin_dashboard/views/widgets/quick_invoice/quick_invoice.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         ),
         SizedBox(width: 32,),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -26,7 +27,10 @@ class DashboardDesktopLayout extends StatelessWidget {
               ],
             ),
           ),
-        )
+        ),
+        SizedBox(width: 24,),
+        Expanded(child: MyCard()),
+        SizedBox(width: 32,)
       ],
     );
   }
