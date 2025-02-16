@@ -16,12 +16,14 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 32,),
         Expanded(
           flex: 3,
-          child: Column(
-            children: [
-              AllExpenses(),
-              SizedBox(height: 24,),
-              QuickInvoice()
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                AllExpenses(),
+                SizedBox(height: 24,),
+                QuickInvoice()
+              ],
+            ),
           ),
         )
       ],
