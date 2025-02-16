@@ -59,4 +59,12 @@ abstract class AppStyles{
     fontWeight: FontWeight.w400,
     color: AppColors.grey,
   );
+
+  static const TextStyle semiBold18 = TextStyle(
+    fontFamily: "Montserrat",
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.blue,
+  );
+
 }
