@@ -10,7 +10,6 @@ class MyCardAndTransactionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundWidget(
-      margin: EdgeInsets.only(top: 40),
       child: Column(
         children: [
           MyCardSection(),
@@ -18,7 +17,7 @@ class MyCardAndTransactionSection extends StatelessWidget {
             height: 40,
             color: AppColors.white3,
           ),
-          TransactionHistory()
+          TransactionHistory(),
         ],
       ),
     );
