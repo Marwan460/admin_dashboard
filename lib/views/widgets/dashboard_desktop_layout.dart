@@ -1,6 +1,7 @@
 import 'package:admin_dashboard/views/widgets/all_expenses/all_expenses.dart';
 import 'package:admin_dashboard/views/widgets/drawer/custom_drawer.dart';
 import 'package:admin_dashboard/views/widgets/my_card/my_card.dart';
+import 'package:admin_dashboard/views/widgets/my_card/my_card_and_transaction_section.dart';
 import 'package:admin_dashboard/views/widgets/my_card/my_card_section.dart';
 import 'package:admin_dashboard/views/widgets/my_card/my_cards_page_view.dart';
 import 'package:admin_dashboard/views/widgets/quick_invoice/quick_invoice.dart';
@@ -39,7 +40,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: MyCardSection()),
+        Expanded(child: MyCardAndTransactionSection()),
         SizedBox(
           width: 32,
         )
