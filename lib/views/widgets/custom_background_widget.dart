@@ -5,13 +5,11 @@ import '../../core/utils/app_colors.dart';
 class CustomBackgroundWidget extends StatelessWidget {
   final double? padding;
   final Widget child;
-  final EdgeInsetsGeometry? margin;
-  const CustomBackgroundWidget({super.key, required this.child, this.padding, this.margin});
+  const CustomBackgroundWidget({super.key, required this.child, this.padding,});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: margin,
       padding: EdgeInsets.all(padding ?? 20),
       decoration: ShapeDecoration(
         color: AppColors.white,
