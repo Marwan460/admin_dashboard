@@ -24,6 +24,7 @@ class IncomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: EdgeInsets.zero,
       shrinkWrap: true,
       itemCount: items.length,
       itemBuilder: (context, index) =>
