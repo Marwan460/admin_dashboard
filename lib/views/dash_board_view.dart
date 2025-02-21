@@ -1,3 +1,4 @@
+import 'package:admin_dashboard/core/utils/size_config.dart';
 import 'package:admin_dashboard/views/widgets/dashboard_desktop_layout.dart';
 import 'package:admin_dashboard/views/widgets/dashboard_mobile_layout.dart';
 import 'package:admin_dashboard/views/widgets/dashboard_tablet_layout.dart';
@@ -10,13 +11,14 @@ class DashBoardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.sizeOf(context).width;
     return Scaffold(
-      appBar: MediaQuery.sizeOf(context).width < 800
+      appBar: width < SizeConfig.tablet
           ? AppBar(
               elevation: 0,
             )
           : null,
-      drawer: MediaQuery.sizeOf(context).width < 800
+      drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet
           ? const Drawer(child: CustomDrawer())
           : null,
       backgroundColor: const Color(0xffF7F9FA),

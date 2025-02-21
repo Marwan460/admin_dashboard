@@ -55,7 +55,7 @@ class _IncomeChartState extends State<IncomeChart> {
           PieChartSectionData(
             showTitle: false,
             color: AppColors.grey,
-            value: 40,
+            value: 22,
             radius: touchedIndex == 3 ? 26 : 21,
           ),
         ]);
