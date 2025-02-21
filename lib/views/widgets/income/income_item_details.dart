@@ -22,11 +22,11 @@ class IncomeItemDetails extends StatelessWidget {
         ),
         title: Text(
           incomeItemDetailsModel.title,
-          style: AppStyles.regular16,
+          style: AppStyles.regular16(context),
         ),
         trailing: Text(
           incomeItemDetailsModel.percent,
-          style: AppStyles.medium16.copyWith(
+          style: AppStyles.medium16(context).copyWith(
             color: const Color(0xff208CC8),
           ),
         ),

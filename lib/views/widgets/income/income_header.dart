@@ -10,7 +10,7 @@ class IncomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Row(
       children: [
-        const Text('Income', style: AppStyles.semiBold20,),
+         Text('Income', style: AppStyles.semiBold20(context),),
         const Spacer(),
         Container(
           padding: const EdgeInsets.all(12),
@@ -21,16 +21,16 @@ class IncomeHeader extends StatelessWidget {
               side: const BorderSide(width: 1, color: AppColors.white3),
             ),
           ),
-          child: const Row(
+          child:  Row(
             children: [
               Text(
                 "Monthly",
-                style: AppStyles.medium16,
+                style: AppStyles.medium16(context),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 18,
               ),
-              Icon(
+              const Icon(
                 Icons.keyboard_arrow_down_sharp,
                 color: AppColors.primary,
               )
