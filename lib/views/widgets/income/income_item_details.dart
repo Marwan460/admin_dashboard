@@ -9,26 +9,23 @@ class IncomeItemDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 25,
-      child: ListTile(
-        leading: Container(
-          width: 12,
-          height: 12,
-          decoration: ShapeDecoration(
-            shape: const OvalBorder(),
-            color: incomeItemDetailsModel.color,
-          ),
+    return ListTile(
+      leading: Container(
+        width: 12,
+        height: 12,
+        decoration: ShapeDecoration(
+          shape: const OvalBorder(),
+          color: incomeItemDetailsModel.color,
         ),
-        title: Text(
-          incomeItemDetailsModel.title,
-          style: AppStyles.regular16(context),
-        ),
-        trailing: Text(
-          incomeItemDetailsModel.percent,
-          style: AppStyles.medium16(context).copyWith(
-            color: const Color(0xff208CC8),
-          ),
+      ),
+      title: Text(
+        incomeItemDetailsModel.title,
+        style: AppStyles.regular16(context)
+      ),
+      trailing: Text(
+        incomeItemDetailsModel.percent,
+        style: AppStyles.medium16(context).copyWith(
+          color: const Color(0xff208CC8),
         ),
       ),
     );

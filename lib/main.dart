@@ -1,7 +1,14 @@
 import 'package:admin_dashboard/views/dash_board_view.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-void main(){
-  runApp(const AdminDashBoard());
+
+void main() {
+  runApp(
+    DevicePreview(
+      builder: (context) => const AdminDashBoard(),
+      enabled: false,
+    ),
+  );
 }
 
 class AdminDashBoard extends StatelessWidget {
@@ -9,9 +16,11 @@ class AdminDashBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home:DashBoardView(),
+      home: const DashBoardView(),
     );
   }
 }
